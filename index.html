@@ -1,25 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Política de Privacidade - Autopost</title>
+  <title>Autopost — Página Inicial, Política de Privacidade e Termos de Serviço</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #222; }
-    h1, h2 { color: #111; }
+    body { font-family: Arial, sans-serif; max-width: 780px; margin: 40px auto; padding: 0 24px; line-height: 1.6; color: #222; }
+    header { border-bottom: 2px solid #eee; padding-bottom: 16px; margin-bottom: 24px; }
+    .yt-badge { display: inline-flex; align-items: center; gap: 8px; background: #f9f9f9; border: 1px solid #ddd; border-radius: 6px; padding: 6px 12px; font-weight: bold; color: #282828; margin: 8px 0; }
+    .yt-icon { display: inline-block; width: 24px; height: 17px; background: #FF0000; border-radius: 4px; position: relative; }
+    .yt-icon::after { content: ""; position: absolute; left: 9px; top: 4px; border-left: 7px solid #fff; border-top: 4.5px solid transparent; border-bottom: 4.5px solid transparent; }
+    nav a { margin-right: 16px; color: #065fd4; font-weight: bold; }
+    h1, h2, h3 { color: #111; }
+    section { margin-top: 32px; padding-top: 16px; border-top: 1px solid #eee; }
   </style>
 </head>
 <body>
-  <h1>Política de Privacidade — Autopost</h1>
-  <p>Última atualização: novembro de 2026.</p>
+  <header id="inicio">
+    <h1>Autopost — Ferramenta Interna de Agendamento</h1>
+    <div class="yt-badge"><span class="yt-icon"></span> Desenvolvido com os Serviços de API do YouTube</div>
+    <p>Aplicação interna em linha de comando (CLI) utilizada exclusivamente pelo proprietário do canal <strong>Pasta Esquecida</strong> para gerir e agendar publicações de vídeos próprios.</p>
+    <nav>
+      <a href="#privacidade">Política de Privacidade</a>
+      <a href="#termos">Termos de Serviço</a>
+      <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">Termos de Serviço do YouTube</a>
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidade do Google</a>
+    </nav>
+  </header>
 
-  <h2>1. Finalidade do Aplicativo</h2>
-  <p>O <strong>Autopost</strong> é uma ferramenta privada de automação e agendamento de publicações utilizada exclusivamente pelo seu proprietário para gerenciar e publicar conteúdos próprios em suas páginas do Facebook, contas do Instagram e canal do YouTube.</p>
+  <section id="privacidade">
+    <h2>Política de Privacidade</h2>
+    <p>Última atualização: novembro de 2026.</p>
+    <h3>1. Uso dos Serviços de API do YouTube</h3>
+    <p>O <strong>Autopost</strong> utiliza os Serviços de API do YouTube (<code>YouTube Data API v3</code>) exclusivamente para verificar o canal do próprio administrador (<code>channels.list</code>) e enviar/agendar vídeos originais (<code>videos.insert</code>). Ao utilizar esta ferramenta, o utilizador concorda com a <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidade do Google</a> e com os <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">Termos de Serviço do YouTube</a>.</p>
+    <h3>2. Armazenamento e Partilha de Dados</h3>
+    <p>A ferramenta é privada, sem registo público e sem utilizadores externos. Não são recolhidos, armazenados externamente nem partilhados dados de terceiros. Os tokens OAuth ficam armazenados apenas localmente na máquina do proprietário.</p>
+    <h3>3. Revogação de Acesso e Eliminação de Dados</h3>
+    <p>O acesso concedido à conta Google pode ser revogado a qualquer momento através da <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">página de definições de segurança do Google</a>, além da eliminação local do ficheiro de credenciais. Para contacto ou pedidos de eliminação: <strong>thiagolaurinosilva16@gmail.com</strong>.</p>
+  </section>
 
-  <h2>2. Coleta e Uso de Dados</h2>
-  <p>O aplicativo não oferece cadastro para terceiros, não coleta dados pessoais de visitantes externos, não vende informações e não compartilha dados com terceiros. As credenciais de acesso (tokens OAuth) são utilizadas exclusivamente para publicar mídias autorizadas pelo próprio administrador das contas.</p>
-
-  <h2>3. Exclusão de Dados do Usuário</h2>
-  <p>Como o aplicativo é de uso estritamente interno, nenhum dado de terceiros é armazenado. Caso deseje revogar o acesso ou solicitar a remoção de qualquer registro associado, basta remover o aplicativo nas configurações da sua conta Meta ou Google, ou enviar um e-mail para <strong>thiagolaurinosilva16@gmail.com</strong>.</p>
+  <section id="termos">
+    <h2>Termos de Serviço</h2>
+    <p>1. O <strong>Autopost</strong> é um software de uso estritamente interno e pessoal, não distribuído nem comercializado a terceiros.</p>
+    <p>2. A utilização dos recursos ligados ao YouTube está vinculada aos <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">Termos de Serviço do YouTube</a>.</p>
+    <p>3. Todo o conteúdo enviado através da ferramenta é de autoria e responsabilidade exclusiva do proprietário do canal.</p>
+  </section>
 </body>
 </html>
